@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/29/">
+    <Project Path="MadisonBridges/MadisonBridges.csproj" Id="109f8db2-b620-4018-a8a8-564acca2d1a8" />
+  </Folder>
+  <Folder Name="/36/">
+    <Project Path="HarvestingOnHorseback/HarvestingOnHorseback.csproj" Id="09af8d0b-2c89-4525-b8fe-e58ad5187a1e" />
+  </Folder>
+  <Folder Name="/Shared/">
+    <Project Path="Shared1/Shared1.csproj" Id="c7124419-e756-48a7-86be-8476085c5752" />
+  </Folder>
+</Solution>
