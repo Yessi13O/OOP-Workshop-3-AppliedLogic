@@ -4,8 +4,6 @@ class Program
 {
     static void Main()
     {
-        Console.WriteLine("Ingrese puentes para validar.");
-        Console.WriteLine("Presione Ctrl + C para salir.");
 
         while (true)
         {
@@ -13,6 +11,7 @@ class Program
 
             string bridge = ConsoleExtension.GetString("Ingrese el puente: ")!;
 
+            // Verify if the bridge complies with the rules
             if (IsValid(bridge))
                 Console.WriteLine("VALIDO");
             else
@@ -20,6 +19,7 @@ class Program
 
             static bool IsValid(string bridge)
             {
+                // If the bridge has less than 2 characters, it cannot be valid.
                 if (bridge.Length < 2)
                     return false;
 
