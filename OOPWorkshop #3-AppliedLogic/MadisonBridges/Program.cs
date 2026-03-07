@@ -1,5 +1,4 @@
-﻿using System;
-using Shared1;
+﻿using Shared1;
 
 class Program
 {
@@ -24,25 +23,25 @@ class Program
                 if (bridge.Length < 2)
                     return false;
 
-                // Debe empezar y terminar con *
+                // It must begin and end with *
                 if (bridge[0] != '*' || bridge[bridge.Length - 1] != '*')
                     return false;
 
-                // No puede haber * en el centro
+                // There cannot be a * in the center
                 for (int i = 1; i < bridge.Length - 1; i++)
                 {
                     if (bridge[i] == '*')
                         return false;
                 }
 
-                // Verificar simetría
+                // Check symmetry
                 for (int i = 0; i < bridge.Length / 2; i++)
                 {
                     if (bridge[i] != bridge[bridge.Length - 1 - i])
                         return false;
                 }
 
-                // No puede haber más de 3 '=' seguidos
+                // There cannot be more than 3 '=' in a row
                 if (bridge.Contains("===="))
                     return false;
 
